@@ -1,0 +1,11 @@
+{
+  "name": "docker-cache-image",
+  "version": "0.0.1",
+  "description": "Example for How to use cache image from docker ?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
