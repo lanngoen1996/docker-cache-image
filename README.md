@@ -2,12 +2,12 @@
 
 Example for How to use cache image from docker ?
 
-### version image
+### Version image
 
 - Docker version 20.10.13
 - Node version 16.3.0
 
-### structure
+### Folder Structure
 
 ```
 app
@@ -27,7 +27,7 @@ app
 └── README.md
 ```
 
-### build & run image
+### Build & Run image
 
 - cache
   - `docker build -f ./Dockerfile.cache -t docker-cache:0.0.1 .`
@@ -40,7 +40,7 @@ app
 
 After change code index.js run build from Dockerfile.cache and Dockerfile.no-cache after that expect result.
 
-### result
+### Result
 
 - cache
   <img src="https://i.imgur.com/jPl9kJ6.jpeg" />
