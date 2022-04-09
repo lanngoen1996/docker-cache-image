@@ -1,13 +1,13 @@
-FROM --platform=linux/amd64 node:16.3.0-alpine
+FROM node:16.3.0-alpine
 
 ENV TERM=xterm
 ENV TZ=Asia/Bangkok
 RUN mkdir -p /usr/app
 WORKDIR /usr/app
 
-COPY ./src/package*.json ./
+COPY ./src/package*.json .
 RUN npm install
 
 COPY ./src .
 
-ENTRYPOINT [ "node index.js" ]
+ENTRYPOINT [ "npm", "run", "dev" ]
