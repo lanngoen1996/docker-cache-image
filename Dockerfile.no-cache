@@ -1,0 +1,11 @@
+FROM --platform=linux/amd64 node:16.3.0-alpine
+
+ENV TERM=xterm
+ENV TZ=Asia/Bangkok
+RUN mkdir -p /usr/app
+WORKDIR /usr/app
+
+COPY ./src .
+RUN npm install
+
+ENTRYPOINT [ "node index.js" ]
